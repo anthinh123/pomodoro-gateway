@@ -3,6 +3,7 @@ package com.thinh.pomodoro_gateway;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
@@ -19,7 +20,7 @@ public class PomodoroGatewayApplication {
 	}
 
 	@Bean
-	public GlobalFilter authenticationFilter() {
+	public GatewayFilter authenticationFilter() {
 		return new AuthenticationFilter();
 	}
 

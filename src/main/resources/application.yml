@@ -2,3 +2,19 @@ security:
   jwt:
     token:
       secret-key: ${JWT_SECRET}
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: timemanagementservice
+#          uri: lb://timemanagementservice
+#          predicates:
+#            - Path=/api/workdays/**
+#          filters:
+#            - AuthenticationFilter
+#
+#        - id: useridentityservice
+#          uri: lb://useridentityservice
+#          predicates:
+#            - Path=/api/v1/auth/**
