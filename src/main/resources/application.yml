@@ -1,7 +1,7 @@
 security:
   jwt:
     token:
-      secret-key: ${JWT_SECRET}
+      secret-key: eF3AYQPPEE0VTFo86X33gDsYdnCs3ClwcaA7wSL2xgg=
 
 #spring:
 #  cloud:
